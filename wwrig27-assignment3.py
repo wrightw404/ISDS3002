@@ -3,19 +3,28 @@
 student_name = "William Wright"
 
 # List of vehicle milage
-# mpg = [18,21,20,21,16,18,18,18,16,20,19,15,17,17,15,15,17,16,14,11,14,13,12,16,15,16,15,15,14,11,11,14,19,22]
-
+mpg = [18,21,20,21,16,18,18,18,16,20,19,15,17,17,15,15,17,16,14,11,14,13,12,16,15,16,15,15,14,11,11,14,19,22]
 
 # Write your for loop and conditional logic here:
 
+num_items = 0
+sum_items = 0 
+smallest_num = mpg.sort()
+largest_num = mpg.sort()
 
+for num in mpg:
+    num_items += 1
+    sum_items += num 
+    avg_num = sum_items / len(mpg)
+    smallest_num = mpg[0]
+    largest_num = mpg[-1]
 
-# Output the results
-# print("The number of items: ", num_items)
-# print("The sum of the items: ", sum_items)
-# print("The average of the items: ", avg_num)
-# print("The smallest number :", smallest_num)
-# print("The largest number :", largest_num)
+#Output the results
+print("The number of items: ", num_items)
+print("The sum of the items: ", sum_items)
+print("The average of the items: ", avg_num)
+print("The smallest number :", smallest_num)
+print("The largest number :", largest_num)
 
 
 # Dictiory of employees
